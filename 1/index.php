@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EzQuiz101</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@300;500&amp;display=swap" rel="stylesheet" />
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
@@ -16,7 +16,7 @@
 
 </head>
 <body>
-    <div class="content container row" style="margin-auto">
+    <div class="content container row" style="margin">
             <?php
                 $url = "https://dd-wtlab2020.netlify.app/pre-final/ezquiz.json";
                 $response = file_get_contents($url);
@@ -26,7 +26,7 @@
                     echo '<div class="card" style="width: 31%;">';
                     foreach ($items->album->images as $image){
                         if ($image->height == 640){
-                            echo '<img class="card-img-top" src="' . $image->url . '" alt="Card image cap">';
+                            echo '<img class="card-img" src="' . $image->url . '" alt="Card image cap">';
                         }
                     }
                     echo '<div class="card-body">';
