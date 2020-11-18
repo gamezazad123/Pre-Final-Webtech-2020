@@ -61,7 +61,7 @@
                         foreach ($items->album->available_markets as $available_markets){
                             $count++;
                         }
-                        echo "Avaliable : " . $count . " countries<br>";
+                        echo "Avaliable : ". $count ." countries<br>";
                         echo '</div>';
                         echo '</div>';
                     }
